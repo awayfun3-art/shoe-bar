@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Store</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        /* Header */
+        header {
+            background: #111;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: #ff6b35;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #ff6b35;
+        }
+
+        /* Hero */
+        .hero {
+            background: #222;
+            color: white;
+            padding: 80px 8%;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ff6b35;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Products */
+        .products {
+            padding: 50px 8%;
+        }
+
+        .products h2 {
+            text-align: center;
+            margin-bottom: 35px;
+            font-size: 32px;
+        }
+
+        .shoe-container {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .shoe {
+            background: white;
+            width: 280px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .shoe img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .shoe h3 {
+            margin: 15px 0 10px;
+        }
+
+        .price {
+            color: #ff6b35;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .buy-btn {
+            background: #111;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .buy-btn:hover {
+            background: #ff6b35;
+        }
+
+        /* Footer */
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>SHOEZ</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#shoes">Shoes</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Step Into Style</h2>
+        <p>Discover our latest collection of stylish and comfortable shoes.</p>
+        <a href="#shoes" class="btn">Shop Now</a>
+    </section>
+
+    <!-- Products -->
+    <section class="products" id="shoes">
+        <h2>Our Shoes</h2>
+
+        <div class="shoe-container">
+
+            <div class="shoe">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80"
+                     alt="Red Running Shoe">
+                <h3>Running Shoes</h3>
+                <p class="price">$49.99</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+            <div class="shoe">
+                <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=600&q=80"
+                     alt="White Casual Shoe">
+                <h3>Casual Shoes</h3>
+                <p class="price">$59.99</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+            <div class="shoe">
+                <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=600&q=80"
+                     alt="Sports Shoe">
+                <h3>Sports Shoes</h3>
+                <p class="price">$69.99</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 SHOEZ. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
